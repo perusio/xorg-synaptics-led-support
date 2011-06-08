@@ -5,7 +5,8 @@
 This repository provides the patches by Takashi Iwai from SUSE for
 supporting the LED in Synaptics touchpads. Like the one that comes
 with the
-[HP Envy 14](https://secure.wikimedia.org/wikipedia/en/wiki/HP_Envy#Envy_14).
+[HP Envy 14](https://secure.wikimedia.org/wikipedia/en/wiki/HP_Envy#Envy_14)
+laptop.
  
 ## Installation
 
@@ -13,11 +14,11 @@ To enable the support for the LED you must apply the two patches:
 
  1. Clone the repo:
  
-     git clone git://github.com/perusio/xorg-synaptics-led-support.git
+      git clone git://github.com/perusio/xorg-synaptics-led-support.git
 
  2. Apply the `touchpad-led-2.6.28.patch` to the kernel source tree:
      
-     patch -p1 -i /path/to/touchpad-led-2.6-28.patch -s --dry-run
+      patch -p1 -i /path/to/touchpad-led-2.6-28.patch -s --dry-run
    
    Check if there's no output. If there is there are problems applying
    the patch. Note that you should invoke the above command from the
