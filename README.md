@@ -51,3 +51,23 @@ Detailed instructions regarding that are out of scope for this modest
 README. Here's a
 [wiki](http://tjworld.net/wiki/Linux/Ubuntu/Kernel/BuildDebianDKMSPackages)
 that elaborates on how to do that.
+
+## Logcheck ignore rules for server profiles
+
+If you're paranoid like me you run [`logcheck`](http://logcheck.org/)
+with a server profile there may appear issues of synchronization of
+the touchpad driver. AFAICT this is a kernel issue.
+
+To stop receiving logcheck emails because of the driver issues then do
+this:
+ 
+ 1. Clone the [`gist`](https://gist.github.com/1036057):
+ 
+     `git clone git://gist.github.com/1036057.git`
+
+ 2. You should have a file `local-kernel`.
+ 
+ 3. Move this file to the `/etc/logcheck/ignore.server.d` or
+    `/etc/logcheck/ignore.workstation.d` or `/etc/logcheck/ignore.paranoid.d`.
+    
+ 4. Done.
