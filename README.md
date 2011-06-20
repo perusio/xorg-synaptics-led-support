@@ -52,7 +52,7 @@ README. Here's a
 [wiki](http://tjworld.net/wiki/Linux/Ubuntu/Kernel/BuildDebianDKMSPackages)
 that elaborates on how to do that.
 
-## Logcheck ignore rules for server profiles
+## Logcheck ignore rules for all profiles
 
 If you're paranoid like me you run [`logcheck`](http://logcheck.org/)
 with a server profile there may appear issues of synchronization of
